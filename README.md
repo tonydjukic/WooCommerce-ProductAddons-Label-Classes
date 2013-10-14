@@ -8,3 +8,10 @@ The WooCommerce Product Add-Ons plugin/extension is a 'commercial' extension tha
 These files will NOT work as a standalone and are just a modification to the original WooThemes Product Add-ons plugin.
 
 Get the full extension here before attempting to use these files: http://www.woothemes.com/products/product-add-ons/
+
+The following files do not need to be replaced because they are no different than the original WooCommerce Product-Addons version:
+- addon-end.php
+- addon-start.php
+- select.php
+
+Updated to match WooCommerce Product-Addons version 2.4.0
