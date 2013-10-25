@@ -12,7 +12,7 @@
 	<?php else : ?>
 
 		<p class="form-row form-row-wide addon-wrap-<?php echo sanitize_title( $addon['field-name'] ); ?>">
-			<label class="rc-<?php echo sanitize_title( $option['label'] ); ?>"><?php echo wptexturize( $option['label'] ) . ' ' . $price; ?> <input type="number" step="any" class="input-text addon addon-custom-price" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>-<?php echo sanitize_title( $option['label'] ); ?>" value="<?php echo esc_attr( $current_value ); ?>" <?php if ( ! empty( $option['min'] ) ) echo 'min="' . $option['min'] .'"'; ?> <?php if ( ! empty( $option['max'] ) ) echo 'max="' . $option['max'] .'"'; ?> /></label>
+			<label class="addonlabel-<?php echo sanitize_title( $option['label'] ); ?>"><?php echo wptexturize( $option['label'] ) . ' ' . $price; ?> <input type="number" step="any" class="input-text addon addon-custom-price" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>-<?php echo sanitize_title( $option['label'] ); ?>" value="<?php echo esc_attr( $current_value ); ?>" <?php if ( ! empty( $option['min'] ) ) echo 'min="' . $option['min'] .'"'; ?> <?php if ( ! empty( $option['max'] ) ) echo 'max="' . $option['max'] .'"'; ?> /></label>
 		</p>
 
 	<?php endif; ?>
