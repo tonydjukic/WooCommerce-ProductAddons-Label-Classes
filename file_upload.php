@@ -11,7 +11,7 @@
 	<?php else : ?>
 
 		<p class="form-row form-row-wide addon-wrap-<?php echo sanitize_title( $addon['field-name'] ); ?>">
-			<label class="rc-<?php echo sanitize_title( $option['label'] ); ?>"><?php echo wptexturize( $option['label'] ) . ' ' . $price; ?> <input type="file" class="input-text addon" data-price="<?php echo $option['price']; ?>" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>-<?php echo sanitize_title( $option['label'] ); ?>" /> <small><?php echo sprintf( __( '(max file size %s)', 'wc_product_addons' ), $max_size ) ?></small></label>
+			<label class="addonlabel-<?php echo sanitize_title( $option['label'] ); ?>"><?php echo wptexturize( $option['label'] ) . ' ' . $price; ?> <input type="file" class="input-text addon" data-price="<?php echo $option['price']; ?>" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>-<?php echo sanitize_title( $option['label'] ); ?>" /> <small><?php echo sprintf( __( '(max file size %s)', 'wc_product_addons' ), $max_size ) ?></small></label>
 		</p>
 
 	<?php endif; ?>
