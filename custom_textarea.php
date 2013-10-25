@@ -11,7 +11,7 @@
 	<?php else : ?>
 
 		<p class="form-row form-row-wide addon-wrap-<?php echo sanitize_title( $addon['field-name'] ); ?>">
-			<label class="rc-<?php echo sanitize_title( $option['label'] ); ?>"><?php echo wptexturize( $option['label'] ) . ' ' . $price; ?> <textarea type="text" class="input-text addon addon-custom-textarea" data-price="<?php echo $option['price']; ?>" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>-<?php echo sanitize_title( $option['label'] ); ?>" rows="4" cols="20" <?php if ( ! empty( $option['max'] ) ) echo 'maxlength="' . $option['max'] .'"'; ?>><?php echo esc_textarea( $current_value ); ?></textarea></label>
+			<label class="addonlabel-<?php echo sanitize_title( $option['label'] ); ?>"><?php echo wptexturize( $option['label'] ) . ' ' . $price; ?> <textarea type="text" class="input-text addon addon-custom-textarea" data-price="<?php echo $option['price']; ?>" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>-<?php echo sanitize_title( $option['label'] ); ?>" rows="4" cols="20" <?php if ( ! empty( $option['max'] ) ) echo 'maxlength="' . $option['max'] .'"'; ?>><?php echo esc_textarea( $current_value ); ?></textarea></label>
 		</p>
 
 	<?php endif; ?>
