@@ -14,4 +14,4 @@ The following files do not need to be replaced because they are no different tha
 - addon-start.php
 - select.php
 
-Updated to match WooCommerce Product-Addons version 2.5.3
+Updated to match WooCommerce Product-Addons version 2.6.2
