@@ -1,6 +1,6 @@
 <?php $first = true; foreach ( $addon['options'] as $i => $option ) :
 
-	$price = $option['price'] > 0 ? '(' . woocommerce_price( $option['price'] ) . ')' : '';
+	$price = $option['price'] > 0 ? '(' . woocommerce_price( get_product_addon_price_for_display( $option['price'] ) ) . ')' : '';
 
 	if ( isset( $_POST[ 'addon-' . sanitize_title( $addon['field-name'] ) ] ) ) {
 		$current_value = (
@@ -14,7 +14,7 @@
 	?>
 
 	<p class="form-row form-row-wide addon-wrap-<?php echo sanitize_title( $addon['field-name'] ) . '-' . $i; ?>">
-		<label class="addonlabel-<?php echo sanitize_title( $option['label'] ); ?>"><input type="radio" class="addon addon-radio" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>[]" data-price="<?php echo $option['price']; ?>" value="<?php echo sanitize_title( $option['label'] ); ?>" <?php checked( $current_value, 1 ); ?> /> <?php echo wptexturize( $option['label'] . ' ' . $price ); ?></label>
+		<label class="rc-<?php echo sanitize_title( $option['label'] ); ?>"><input type="radio" class="addon addon-radio" name="addon-<?php echo sanitize_title( $addon['field-name'] ); ?>[]" data-price="<?php echo get_product_addon_price_for_display( $option['price'] ); ?>" value="<?php echo sanitize_title( $option['label'] ); ?>" <?php checked( $current_value, 1 ); ?> /> <?php echo wptexturize( $option['label'] . ' ' . $price ); ?></label>
 	</p>
 
 <?php endforeach; ?>
