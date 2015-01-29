@@ -2,10 +2,12 @@
 
 	$price = $option['price'] > 0 ? '(' . woocommerce_price( get_product_addon_price_for_display( $option['price'] ) ) . ')' : '';
 
-	$current_value = (
-			isset( $_POST[ 'addon-' . sanitize_title( $addon['field-name'] ) ] ) &&
-			in_array( sanitize_title( $option['label'] ), $_POST[ 'addon-' . sanitize_title( $addon['field-name'] ) ] )
-			) ? 1 : 0;
+	$selected = isset( $_POST[ 'addon-' . sanitize_title( $addon['field-name'] ) ] ) ? $_POST[ 'addon-' . sanitize_title( $addon['field-name'] ) ] : array();
+	if ( ! is_array( $selected ) ) {
+		$selected = array( $selected );
+	}
+
+	$current_value = ( in_array( sanitize_title( $option['label'] ), $selected ) ) ? 1 : 0;
 	?>
 
 	<p class="form-row form-row-wide addon-wrap-<?php echo sanitize_title( $addon['field-name'] ) . '-' . $i; ?>">
