@@ -1,5 +1,7 @@
 WooCommerce-ProductAddons-Label-Classes
 =======================================
+***No longer updating this, so any attempt to use could require a bit of coding to get it to work with whatever the current version of the main plugin is.***
+
 *** For clarification:  This is NOT the WooCommerce Product Add-ons Plugin/Extension; these are just edited template files that give unique CSS classes to the labels for each input.  You MUST first purchase the actual WooCommerce Product Add-ons extension, otherwise these files here will be useless to you. ***
 
 *** Remember to update these files after every update of the WooCommerce Product-Addons plugin is performed.***
